@@ -1,33 +1,58 @@
 html {
-    background: #e6e9e9;
-    background-image: linear-gradient(270deg, rgb(230, 233, 233) 0%, rgb(216, 221, 221) 100%);
+<<<<<<< HEAD
+    background: black;
     -webkit-font-smoothing: antialiased;
 }
 
 body {
-    background: #222;
-    box-shadow: 0 0 2px rgba(0, 0, 0, 0.06);
-    color: #545454;
+    background: black url('../images/background.png') no-repeat fixed right top;
+    color: #999999;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 14px;
     line-height: 1.5;
     margin: 0 auto;
+    max-width: 1366px;
+    padding: 2em 2em 4em;
+}
+
+@font-face {
+    font-family: 'hard_rockregular';
+    src: url('../font/hard_rock-webfont.woff2') format('woff2'),
+         url('../font/hard_rock-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1 {
+    color: white;
+    font-family: 'hard_rockregular';
+    font-weight: 100;
+    font-style: normal;
+    font-size: 100px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    border: 1px;
+    margin-bottom: 10;
+    padding: 0;
+    overflow: hidden;
+
+}
+
+li {
+    display: inline-block;
+    float: center;
+    color: white;
+    text-align: center;
+    padding: 10px 16px;
+    text-decoration: none;
+    background-color: #333333;
+    border: 1px solid #999999;
+    border-radius: 5px;
     max-width: 800px;
     padding: 2em 2em 4em;
 }
 
-h1 {
-    color: #ddd;
-    font-weight: 700;
-    line-height: 1.3;
-    margin-top: 1.3em;
-    text-align: center;
-}
-
-h2, h3 {
-    color: #ddd;
-    font-weight: 600;
-    line-height: 1.3;
-    margin-top: 1.3em;
-    text-align: center;
-}
