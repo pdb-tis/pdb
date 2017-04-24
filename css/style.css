@@ -1,4 +1,5 @@
 html {
+<<<<<<< HEAD
     background: black;
     -webkit-font-smoothing: antialiased;
 }
@@ -22,7 +23,7 @@ body {
     font-style: normal;
 }
 
-h1 {\
+h1 {
     color: white;
     font-family: 'hard_rockregular';
     font-weight: 100;
@@ -51,4 +52,7 @@ li {
     background-color: #333333;
     border: 1px solid #999999;
     border-radius: 5px;
+    max-width: 800px;
+    padding: 2em 2em 4em;
 }
+
