@@ -1,0 +1,80 @@
+html {
+    background: black;
+    -webkit-font-smoothing: antialiased;
+}
+
+body {
+    background: black url('../images/background.png') no-repeat fixed right top;
+    color: #999999;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 0 auto;
+    max-width: 1366px;
+    padding: 2em 2em 4em;
+}
+
+@font-face {
+    font-family: 'hard_rockregular';
+    src: url('../font/hard_rock-webfont.woff2') format('woff2'),
+         url('../font/hard_rock-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1 {
+    color: white;
+    font-family: 'hard_rockregular';
+    font-weight: 100;
+    font-style: normal;
+    font-size: 100px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    border: 1px;
+    margin-bottom: 10;
+    padding: 0;
+    overflow: hidden;
+}
+
+.lit-button {
+    display: inline-block;
+    float: center;
+    color: white;
+    text-align: center;
+    padding: 10px 16px;
+    text-decoration: none;
+    background-color: #333333;
+    border: 1px solid #999999;
+    border-radius: 5px;
+    max-width: 800px;
+    transition-duration: 0.4s;
+}
+
+.lit-button:hover {
+    background-color: #555555;
+    color: white;
+}
+
+.shadow-button {
+    display: inline-block;
+    float: center;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+    padding: 10px 16px;
+    text-decoration: none;
+    background-color: #333333;
+    border: 1px solid #999999;
+    border-radius: 5px;
+    margin: 4px 2px;
+    max-width: 800px;
+    transition-duration: 0.4s;
+}
+
+.shadow-button:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
