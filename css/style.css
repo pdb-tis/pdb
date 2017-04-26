@@ -9,7 +9,8 @@ html {
 
 [class*="col-"] {
     float: left;
-    padding: 12px 24px;
+    min-height: 50px;
+    max-height: 250px;
     border: 1px dotted red;
 }
 
@@ -66,14 +67,16 @@ ul {
 .lit-button {
     display: inline-block;
     float: center;
-    color: white;
     text-align: center;
-    padding: 10px 16px;
-    text-decoration: none;
+/*    padding: 10px 16px;*/
+    width: 90%;
+    height: 90%;
+    margin 5%;
+    position: relative;
+    color: white;
     background-color: #333333;
     border: 1px solid #999999;
     border-radius: 4px;
-    max-width: 800px;
     transition-duration: 0.3s;
 }
 
