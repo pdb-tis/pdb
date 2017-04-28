@@ -9,8 +9,8 @@ html {
 
 [class*="col-"] {
     float: left;
-    min-height: 50px;
-    max-height: 250px;
+    min-height: 10px;
+    max-height: 600px;
     border: 1px dotted red;
 }
 
@@ -84,8 +84,6 @@ h1 {
 
 /* banner slideshow */
 .arrow-left {
-    width: 0; 
-    height: 0; 
     border-top: 10px solid transparent;
     border-bottom: 10px solid transparent; 
     border-right: 15px solid #cccccc;
@@ -93,8 +91,6 @@ h1 {
 }
 
 .arrow-right {
-    width: 0; 
-    height: 0; 
     border-top: 10px solid transparent;
     border-bottom: 10px solid transparent;
     border-left: 15px solid #cccccc;
