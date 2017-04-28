@@ -11,7 +11,7 @@ html {
     float: left;
     min-height: 10px;
     max-height: 600px;
-    border: 1px dotted red;
+/*    border: 1px dotted red;*/
 }
 
 .col-1 {width: 8.33%;}
@@ -82,30 +82,41 @@ h1 {
     color: white;
 }
 
+icon.ca {
+    width: 26px;
+    height 26px;
+    display: inline-block;
+    float: right;
+    text-indent: -9999px;
+    background-image: url('../images/calendar-icon.png');
+    background-repeat: no-repeat;
+}
+
 /* banner slideshow */
 .arrow-left {
-    border-top: 10px solid transparent;
-    border-bottom: 10px solid transparent; 
-    border-right: 15px solid #cccccc;
+    border-top: 60px solid transparent;
+    border-bottom: 60px solid transparent;
+    border-right: 30px solid #cccccc;
     transition-duration: 0.3s;
 }
 
 .arrow-right {
-    border-top: 10px solid transparent;
-    border-bottom: 10px solid transparent;
-    border-left: 15px solid #cccccc;
+    border-top: 60px solid transparent;
+    border-bottom: 60px solid transparent;
+    border-left: 30px solid #cccccc;
+    transition-duration: 0.3s;
 }
 
 .arrow-left:hover {
-    border-top: 10px solid transparent;
-    border-bottom: 10px solid transparent; 
-    border-right: 15px solid #ffffff; 
+    border-top: 60px solid transparent;
+    border-bottom: 60px solid transparent;
+    border-right: 40px solid #ffffff;
 }
 
 .arrow-right:hover {
-    border-top: 10px solid transparent;
-    border-bottom: 10px solid transparent;
-    border-left: 15px solid #ffffff;
+    border-top: 60px solid transparent;
+    border-bottom: 60px solid transparent;
+    border-left: 40px solid #ffffff;
 }
 
 element.style {
@@ -172,7 +183,7 @@ icon.wb {
     width: 26px;
     height 26px;
     display: block;
-    /*text-indent: -9999px;
-    background-image: url('../images/website.png');
-    background-repeat: no-repeat;*/
+    text-indent: -9999px;
+    background-image: url('../images/web-icon.png');
+    background-repeat: no-repeat;
 }
