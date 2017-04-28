@@ -7,6 +7,31 @@ html {
     -webkit-font-smoothing: antialiased;
 }
 
+body {
+    background: black url('../images/background.png') no-repeat fixed right top;
+    color: #999999;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 2.0;
+    margin: 0 auto;
+    max-width: 1366px;
+    padding: 2em 2em 4em;
+}
+
+@font-face {
+    font-family: 'hard_rockregular';
+    src: url('../font/hard_rock-webfont.woff2') format('woff2'),
+         url('../font/hard_rock-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.row {
+    margin-bottom: 10;
+    padding: 0;
+    overflow: hidden;
+}
+
 [class*="col-"] {
     float: left;
     min-height: 10px;
@@ -27,23 +52,22 @@ html {
 .col-11 {width: 91.66%;}
 .col-12 {width: 100%;}
 
-body {
-    background: black url('../images/background.png') no-repeat fixed right top;
-    color: #999999;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 14px;
-    line-height: 2.0;
-    margin: 0 auto;
-    max-width: 1366px;
-    padding: 2em 2em 4em;
+section {
+    float: left;
+    margin: 0 1.5%;
+    width: 63%;
+    margin-bottom: 72px;
 }
 
-@font-face {
-    font-family: 'hard_rockregular';
-    src: url('../font/hard_rock-webfont.woff2') format('woff2'),
-         url('../font/hard_rock-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+aside {
+    float: right;
+    margin: 0 1.5%;
+    width: 30%;
+}
+
+footer {
+    margin: 16px 1.5% 16px 1.5%;
+    width: 97%;
 }
 
 h1 {
@@ -55,12 +79,6 @@ h1 {
     margin-top: 0;
     margin-bottom: 0;
     text-align: center;
-}
-
-.row {
-    margin-bottom: 10;
-    padding: 0;
-    overflow: hidden;
 }
 
 /* nav-bar */
@@ -99,14 +117,14 @@ icon.ca {
 
 /* banner slideshow */
 arrow {
-    border: solid #cccccc;
-    border-width: 0 30px 30px 0;
+    position: absolute;
+    border: solid #aaaaaa;
+    border-width: 0 20px 20px 0;
     display: block;
     padding: 20px;
     margin: auto;
-    width: 50%;
-    vertical-align: middle;
-
+    width: 4.5%;
+    top: 65%;
 }
 
 .left {
@@ -122,11 +140,13 @@ arrow {
 }
 
 .left:hover {
-    outline-color: solid #ffffff;
+    border-right-color: #ffffff;
+    border-bottom-color: #ffffff;
 }
 
 .right:hover {
-    border: solid #ffffff;
+    border-right-color: #ffffff;
+    border-bottom-color: #ffffff;
 }
 
 element.style {
