@@ -62,6 +62,7 @@ h1 {
     overflow: hidden;
 }
 
+/* nav-bar */
 .lit-button {
     display: inline-block;
     float: center;
@@ -81,6 +82,7 @@ h1 {
     color: white;
 }
 
+/* banner slideshow */
 .arrow-left {
     width: 0; 
     height: 0; 
@@ -110,6 +112,21 @@ h1 {
     border-left: 15px solid #ffffff;
 }
 
+element.style {
+    max-width: 1000px;
+}
+
+.ss-section, .ss-code {
+    margin-top: 16px!important;
+    margin-bottom: 16px!important;
+}
+
+.ss-content {
+    max-width: 980px;
+    margin: auto;
+}
+
+/* footer */
 icon.fb {
     width: 26px;
     height 26px;
