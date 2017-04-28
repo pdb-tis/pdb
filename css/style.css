@@ -52,7 +52,8 @@ h1 {
     font-weight: 100;
     font-style: normal;
     font-size: 100px;
-    margin-top: 10px;
+    margin-top: 0;
+    margin-bottom: 0;
     text-align: center;
 }
 
@@ -63,6 +64,10 @@ h1 {
 }
 
 /* nav-bar */
+nav {
+    margin-bottom: 32px;
+}
+
 .lit-button {
     display: inline-block;
     float: center;
@@ -93,30 +98,35 @@ icon.ca {
 }
 
 /* banner slideshow */
-.arrow-left {
-    border-top: 60px solid transparent;
-    border-bottom: 60px solid transparent;
-    border-right: 30px solid #cccccc;
+arrow {
+    border: solid #cccccc;
+    border-width: 0 30px 30px 0;
+    display: block;
+    padding: 20px;
+    margin: auto;
+    width: 50%;
+    vertical-align: middle;
+
+}
+
+.left {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
     transition-duration: 0.3s;
 }
 
-.arrow-right {
-    border-top: 60px solid transparent;
-    border-bottom: 60px solid transparent;
-    border-left: 30px solid #cccccc;
+.right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
     transition-duration: 0.3s;
 }
 
-.arrow-left:hover {
-    border-top: 60px solid transparent;
-    border-bottom: 60px solid transparent;
-    border-right: 40px solid #ffffff;
+.left:hover {
+    outline-color: solid #ffffff;
 }
 
-.arrow-right:hover {
-    border-top: 60px solid transparent;
-    border-bottom: 60px solid transparent;
-    border-left: 40px solid #ffffff;
+.right:hover {
+    border: solid #ffffff;
 }
 
 element.style {
@@ -124,8 +134,8 @@ element.style {
 }
 
 .ss-section, .ss-code {
-    margin-top: 16px!important;
-    margin-bottom: 16px!important;
+    margin-top: 16px;
+    margin-bottom: 16px;
 }
 
 .ss-content {
