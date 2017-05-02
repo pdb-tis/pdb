@@ -26,50 +26,6 @@ body {
     font-style: normal;
 }
 
-.row {
-    margin-bottom: 10;
-    padding: 0;
-    overflow: hidden;
-}
-
-[class*="col-"] {
-    float: left;
-    min-height: 10px;
-    max-height: 600px;
-/*    border: 1px dotted red;*/
-}
-
-.col-1 {width: 8.33%;}
-.col-2 {width: 16.66%;}
-.col-3 {width: 25%;}
-.col-4 {width: 33.33%;}
-.col-5 {width: 41.66%;}
-.col-6 {width: 50%;}
-.col-7 {width: 58.33%;}
-.col-8 {width: 66.66%;}
-.col-9 {width: 75%;}
-.col-10 {width: 83.33%;}
-.col-11 {width: 91.66%;}
-.col-12 {width: 100%;}
-
-section {
-    float: left;
-    margin: 0 1.5%;
-    width: 63%;
-    margin-bottom: 72px;
-}
-
-aside {
-    float: right;
-    margin: 0 1.5%;
-    width: 30%;
-}
-
-footer {
-    margin: 16px 1.5% 16px 1.5%;
-    width: 97%;
-}
-
 h1 {
     color: white;
     font-family: 'hard_rockregular';
@@ -81,18 +37,63 @@ h1 {
     text-align: center;
 }
 
+/* grid layout */
+.grid-container {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-gap: 10px;
+    grid-template-areas:
+        "header header header header header"
+        "nav nav nav nav nav"
+        "aside aside section section section"
+        "footer footer footer footer footer"
+}
+
+header {
+    grid-area: header;
+}
+
+aside {
+    grid-area: aside;
+}
+
+section {
+    grid-area: section;
+}
+
+footer {
+    grid-area: footer;
+    display: flex;
+    justify-content: space-around;
+}
+
 /* nav-bar */
 nav {
+    grid-area: nav;
+    display: flex;
+    justify-content: space-between;
     margin-bottom: 32px;
 }
 
+nav ul {
+    margin 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 30px;
+}
+
 .lit-button {
+    /*
     display: inline-block;
     float: center;
     text-align: center;
+    */
     padding: 10px 16px;
-    width: 90%;
-    height: 90%;
     color: white;
     background-color: #333333;
     border: 1px solid #999999;
@@ -106,16 +107,18 @@ nav {
 }
 
 icon.ca {
+    /*
+    display: inline-block;
+    */
     width: 26px;
     height 26px;
-    display: inline-block;
     float: right;
     text-indent: -9999px;
     background-image: url('../images/calendar-icon.png');
     background-repeat: no-repeat;
 }
 
-/* banner slideshow */
+/* banner slideshow *
 arrow {
     position: absolute;
     border: solid #aaaaaa;
@@ -148,7 +151,7 @@ arrow {
     border-right-color: #ffffff;
     border-bottom-color: #ffffff;
 }
-
+*/
 element.style {
     max-width: 1000px;
 }
