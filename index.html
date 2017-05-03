@@ -5,35 +5,31 @@
 		<title>Portal RockOut</title>
 		<link rel="stylesheet" href="css/style.css" type="text/css">
 	</head>
-	<body>
+	<body class="grid-container">
 		<header>
-			<div>
-				<h1>Portal RockOut</h1>
-			</div>
+            <h1>Portal RockOut</h1>
 		</header>
 		<nav>
-		    <ul>
-                <button class="button lit-button">Bandas</button>
-                <button class="button lit-button">Locais</button>
-                <button class="button shadow-button">Eventos</button>
+            <ul>
+                <li><button class="button lit-button">Bandas</button></li>
+                <li><button class="button lit-button">Locais</button></li>
+                <li><button class="button lit-button">Eventos</button></li>
+                <li><icon href="" class="ca">Calendar.ico</icon></li>
+                <li><form><input type="date" name="event-day"></form></li>
             </ul>
-			<div>
-				Campo do Calendario
-			</div>
-			<div>
-				icone do campo do calendario
-			</div>
 		</nav>
 		<section>
-			<div>
-				botao de seta para esquerda
+        <div>
+            <!--<div><arrow class="left"></arrow></div>-->
+            <!-- Event slideshow example -->
+        	<div class="ss-content ss-section" style="max-width:1000px">
+                <img class="demoSlides" src="images/demo_1.jpg" style="width: 100%; display: none;">
+                <img class="demoSlides" src="images/demo_2.jpg" style="width: 100%; display: none;">
+                <img class="demoSlides" src="images/demo_3.jpg" style="width: 100%; display: block;">
 			</div>
-			<div>
-				mostrador do Banner do evento
-			</div>
-			<div>
-				botao de seta para direita
-			</div>
+            <!--<div><arrow class="right"></arrow></div>-->
+        </div>
+<!-- rediscutir uso das maos de esqueleto
 			<div>
 				icone de mao de esqueleto para indicação do banner um do evento
 			</div>
@@ -45,32 +41,40 @@
 			</div>
 			<div>
 				icone de mao de esqueleto para indicação do banner quatro do evento
-			</div>
+			</div>-->
 		</section>
 		<aside>
-			<div>
-				<h3>Compra de ingresso</h3>
-			</div>
-			<div>
-				link do site de Compra de ingresso
+			<div class="tickets">
+                <h3>Compra de ingresso</h3>
+				<a href="www.sympla.com">https://www.sympla.com</a>
 			</div>
 		</aside>
-		<footer>
-			<div>
-				icone do instragram
-			</div>
-			<div>
-				icone do twitter
-			</div>
-			<div>
-				icone do email
-			</div>
-			<div>
-				icone do youtube
-			</div>
-			<div>
-				icone do facebook
-			</div>
+        <footer class="social-media">
+                <div class="facebook"> 
+                    <a href="https://www.facebook.com">
+                        <img src="images/facebook.png" alt="Facebook"/>
+                    </a>
+                </div>
+                <div class="instagram"> 
+                    <a href="https://www.instagram.com">
+                        <img src="images/instagram.png" alt="Instagram"/>
+                    </a>
+                </div>
+                <div class="twitter"> 
+                    <a href="https://www.twitter.com">
+                        <img src="images/twitter.png" alt="Twitter"/>
+                    </a>
+                </div>
+                <div class="youtube"> 
+                    <a href="https://www.youtube.com">
+                        <img src="images/youtube.png" alt="Youtube"/>
+                    </a>
+                </div>     
+                <div class="email"> 
+                    <a href="https://www.gmail.com">
+                        <img src="images/email.png" alt="Email"/>
+                    </a>
+                </div>            
 		</footer>
 	 </body>
 </html>

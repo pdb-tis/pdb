@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 html {
     background: black;
     -webkit-font-smoothing: antialiased;
@@ -8,7 +12,7 @@ body {
     color: #999999;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 14px;
-    line-height: 1.5;
+    line-height: 2.0;
     margin: 0 auto;
     max-width: 1366px;
     padding: 2em 2em 4em;
@@ -16,8 +20,16 @@ body {
 
 @font-face {
     font-family: 'hard_rockregular';
-    src: url('../font/hard_rock-webfont.woff2') format('woff2'),
-         url('../font/hard_rock-webfont.woff') format('woff');
+    src: url('../font/hard_rock/hard_rock-webfont.woff2') format('woff2'),
+         url('../font/hard_rock/hard_rock-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'chinese_rocksregular';
+    src: url('../font/chineser/chineser-webfont.woff2') format('woff2'),
+         url('../font/chineser/chineser-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -28,53 +40,177 @@ h1 {
     font-weight: 100;
     font-style: normal;
     font-size: 100px;
-    margin-top: 10px;
+    margin-top: 0;
+    margin-bottom: 0;
     text-align: center;
 }
 
-ul {
-    list-style-type: none;
-    border: 1px;
-    margin-bottom: 10;
+/* grid layout */
+.grid-container {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-gap: 10px;
+    grid-template-areas:
+        "header header header header header"
+        "nav nav nav nav nav"
+        "aside aside section section section"
+        "footer footer footer footer footer"
+}
+
+header {
+    grid-area: header;
+}
+
+aside {
+    grid-area: aside;
+}
+
+section {
+    grid-area: section;
+}
+
+footer {
+    grid-area: footer;
+    display: flex;
+    justify-content: space-around;
+}
+
+/* nav-bar */
+nav {
+    grid-area: nav;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 32px;
+}
+
+nav ul {
+    margin 0;
     padding: 0;
-    overflow: hidden;
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 30px;
 }
 
 .lit-button {
+    /*
     display: inline-block;
     float: center;
-    color: white;
     text-align: center;
+    */
     padding: 10px 16px;
-    text-decoration: none;
+    color: white;
     background-color: #333333;
     border: 1px solid #999999;
-    border-radius: 5px;
-    max-width: 800px;
-    transition-duration: 0.4s;
+    border-radius: 4px;
+    transition-duration: 0.3s;
 }
 
 .lit-button:hover {
-    background-color: #555555;
+    background-color: #454545;
     color: white;
 }
 
-.shadow-button {
+icon.ca {
+    /*
     display: inline-block;
-    float: center;
-    color: white;
-    cursor: pointer;
-    text-align: center;
-    padding: 10px 16px;
-    text-decoration: none;
-    background-color: #333333;
-    border: 1px solid #999999;
-    border-radius: 5px;
-    margin: 4px 2px;
-    max-width: 800px;
-    transition-duration: 0.4s;
+    */
+    width: 26px;
+    height 26px;
+    float: right;
+    text-indent: -9999px;
+    background-image: url('../images/calendar-icon.png');
+    background-repeat: no-repeat;
 }
 
-.shadow-button:hover {
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+/* banner slideshow *
+arrow {
+    position: absolute;
+    border: solid #aaaaaa;
+    border-width: 0 20px 20px 0;
+    display: block;
+    padding: 20px;
+    margin: auto;
+    width: 4.5%;
+    top: 65%;
+}
+
+.left {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+    transition-duration: 0.3s;
+}
+
+.right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    transition-duration: 0.3s;
+}
+
+.left:hover {
+    border-right-color: #ffffff;
+    border-bottom-color: #ffffff;
+}
+
+.right:hover {
+    border-right-color: #ffffff;
+    border-bottom-color: #ffffff;
+}
+*/
+element.style {
+    max-width: 1000px;
+}
+
+.ss-section, .ss-code {
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.ss-content {
+    max-width: 980px;
+    margin: auto;
+}
+
+/* aside */
+.tickets {
+    display: grid;
+    grid-template-rows: 40px 40px;
+    grid-template-columns: 300px;
+    grid-gap: 10px;
+    float: right;
+    align-items: center
+}
+
+.tickets h3 {
+    color: white;
+    font-family: 'chinese_rocksregular';
+    font-weight: 40;
+    font-style: normal;
+    font-size: 40px;
+    text-align: center;
+}
+
+.tickets a {
+    color: white;
+    font-weight: 50;
+    font-style: normal;
+    font-size: 20px;
+    text-align: center;
+}
+
+/* footer */
+
+.social-media {
+    display: grid;
+    grid-template-rows: 26px;
+    grid-template-columns: 26px 26px 26px 26px 26px;
+    grid-gap: 20px;
+    margin-bottom: 0px;
+    margin-left: 40%;
+    margin-right: 40%;
+    float: center;
+    align-items: center;
 }
