@@ -187,28 +187,27 @@ element.style {
 .tickets h3 {
     color: white;
     font-family: 'chinese_rocksregular';
-    font-weight: 40;
+    font-weight: 100;
     font-style: normal;
-    font-size: 40px;
+    font-size: 36px;
     text-align: center;
 }
 
 .tickets a {
     color: white;
-    font-weight: 50;
+    font-weight: 100;
     font-style: normal;
-    font-size: 20px;
+    font-size: 16px;
     text-align: center;
 }
 
 /* footer */
-
 .social-media {
     display: grid;
     grid-template-rows: 26px;
     grid-template-columns: 26px 26px 26px 26px 26px;
     grid-gap: 20px;
-    margin-bottom: 0px;
+    margin-top: 40px;
     margin-left: 40%;
     margin-right: 40%;
     float: center;
