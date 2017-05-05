@@ -6,6 +6,7 @@ CREATE TABLE address
   [number] smallint check ([number] > 0),
   [complement] varchar(20),
   [city_id] integer check ([city_id] > 0) NOT NULL,
+  [postal_code] varchar(20),
   CONSTRAINT pk_address PRIMARY KEY ([id])
 );
 
@@ -182,7 +183,7 @@ CREATE TABLE province
 );
 
 ALTER TABLE [address] ADD CONSTRAINT [fk_address_city]
-  FOREIGN KEY ([city_id]) REFERENCES city ([id]) ON UPDATE NO ACTION;
+  FOREIGN KEY ([city_id]) REFERENCES city ([id]);
 
 ALTER TABLE [album] ADD CONSTRAINT [fk_album_band]
   FOREIGN KEY ([band_id]) REFERENCES band ([id]);
@@ -203,10 +204,10 @@ ALTER TABLE [band_member] ADD CONSTRAINT [fk_band_member_band]
   FOREIGN KEY ([band_id]) REFERENCES band ([id]);
 
 ALTER TABLE [city] ADD CONSTRAINT [fk_city_province]
-  FOREIGN KEY ([province_id]) REFERENCES province ([id]) ON UPDATE NO ACTION;
+  FOREIGN KEY ([province_id]) REFERENCES province ([id]);
 
 ALTER TABLE [customer] ADD CONSTRAINT [fk_customer_en_customer_type]
-  FOREIGN KEY ([type_id]) REFERENCES en_customer_type ([id]) ON DELETE NO ACTION ON UPDATE NO ACTION;
+  FOREIGN KEY ([type_id]) REFERENCES en_customer_type ([id]);
 
 ALTER TABLE [customer_address] ADD CONSTRAINT [fk_customer_address_address]
   FOREIGN KEY ([address_id]) REFERENCES address ([id]);
@@ -237,6 +238,9 @@ ALTER TABLE [en_musical_genre_sub_genre] ADD CONSTRAINT [fk_en_musical_genre]
 
 ALTER TABLE [en_musical_genre_sub_genre] ADD CONSTRAINT [fk_en_musical_genre_sub_genre]
   FOREIGN KEY ([sub_genre_id]) REFERENCES en_musical_genre ([id]);
+
+ALTER TABLE [event] ADD CONSTRAINT [fk_event_address]
+  FOREIGN KEY ([address_id]) REFERENCES address ([id]) ON DELETE NO ACTION ON UPDATE NO ACTION;
 
 ALTER TABLE [event_band] ADD CONSTRAINT [fk_event_band_band]
   FOREIGN KEY ([band_id]) REFERENCES band ([id]);
