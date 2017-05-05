@@ -3,78 +3,81 @@
 	<head>
 		<meta charset="UTF-8"/>
 		<title>RockOut</title>
+		<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+		<link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
+		<link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
 		<link rel="stylesheet" href="css/style.css" type="text/css">
-		<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+		<link rel="stylesheet" href="css/fonts.css" type="text/css">
+
 		<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
 		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-		<script src="js/datepicker.js"></script>
-		<script src="js/carousel.js"></script>
+		<script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+		<script src="js/custom-datepicker.js"></script>
+		<script src="js/home-page.js"></script>
 	</head>
-	<body class="grid-container">
+	<body>
 		<header>
-            <h1>Portal RockOut</h1>
+			<h1>Portal RockOut</h1>
 		</header>
 		<nav>
-            <ul>
-                <li><button class="lit-button">Bandas</button></li>
-                <li><button class="lit-button">Locais</button></li>
-                <li><button class="lit-button">Eventos</button></li>
-                <li class="lit-date">
-                    <label>De: </label>
-                    <input type="text" size="7px" id="datepicker-from">
-                    <label> até </label>
-                    <input type="text" size="7px" id="datepicker-to">
-                </li>
-            </ul>
+			<div class="container">
+				<div class="button-container">
+					<button>BANDAS</button>
+					<button>LOCAIS</button>
+					<button>EVENTOS</button>
+				</div>
+			</div>
 		</nav>
 		<section>
-        	<div class="ss-content ss-section">
-                <img class="demoSlides" src="images/demo_0.jpg" style="width: 100%">
-                <img class="demoSlides" src="images/demo_1.jpg" style="width: 100%">
-                <img class="demoSlides" src="images/demo_2.jpg" style="width: 100%">
-                <img class="demoSlides" src="images/demo_3.jpg" style="width: 100%">
-                <img class="demoSlides" src="images/demo_4.jpg" style="width: 100%">
-                <img class="demoSlides" src="images/demo_5.jpg" style="width: 100%">
+			<div class="carousel-content">
+				<img src="/images/demo_0.jpg" style="width: 100%">
+				<img src="/images/demo_1.jpg" style="width: 100%">
+				<img src="/images/demo_2.jpg" style="width: 100%">
+				<img src="/images/demo_3.jpg" style="width: 100%">
+				<img src="/images/demo_4.jpg" style="width: 100%">
+				<img src="/images/demo_5.jpg" style="width: 100%">
 			</div>
-            <script>carousel()</script>
 		</section>
 		<aside>
+			<div class="search-form">
+				<h2> PESQUISA DE EVENTOS </h2>
+				Nome da banda: <input type="text" class="band-name"><br>
+				Endereço do evento: <input placeholder="Rua Frutal, ..." type="text" class="address"><br>
+				No período de:
+				<input type="text" size="7px" class="date-from">
+				a
+				<input type="text" size="7px" class="date-to"><br>
+			</div>
+			<div class="button-container">
+				<button class="event-search">PESQUISAR</button>
+			</div>
+			<hr>
 			<div class="tickets">
-                <h3>Compra de ingressos</h3>
-				<a href="https://www.sympla.com">www.sympla.com</a>
+				<h3>COMPRA DE INGRESSOS</h3>
+				<div><a href="https://www.sympla.com">www.sympla.com</a></div>
 			</div>
 		</aside>
-        <footer class="social-media">
-            <div class="facebook">
-                <a href="https://www.facebook.com">
-                    <img src="images/facebook.png" alt="Facebook"/>
-                </a>
-            </div>
-            <div class="instagram">
-                <a href="https://www.instagram.com">
-                    <img src="images/instagram.png" alt="Instagram"/>
-                </a>
-            </div>
-            <div class="twitter">
-                <a href="https://www.twitter.com">
-                    <img src="images/twitter.png" alt="Twitter"/>
-                </a>
-            </div>
-            <div class="youtube">
-                <a href="https://www.youtube.com">
-                    <img src="images/youtube.png" alt="Youtube"/>
-                </a>
-            </div>
-            <div class="email">
-                <a href="https://www.gmail.com">
-                    <img src="images/email.png" alt="Email"/>
-                </a>
-            </div>
-            <div class="website">
-                <a href="https://www.rock.com">
-                    <img src="images/web-icon.png" alt="Website"/>
-                </a>
-            </div>
-        </footer>
-    </body>
+		<footer>
+			<div class="social-media">
+				<a href="https://www.facebook.com" target="_blank"> <img src="images/facebook.png" alt="Facebook"/>
+				</a>
+				<a href="https://www.instagram.com" target="_blank">
+					<img src="images/instagram.png" alt="Instagram"/>
+				</a>
+				<a href="https://www.twitter.com" target="_blank">
+					<img src="images/twitter.png" alt="Twitter"/>
+				</a>
+				<a href="https://www.youtube.com" target="_blank">
+					<img src="images/youtube.png" alt="Youtube"/>
+				</a>
+				<a href="https://www.gmail.com" target="_blank">
+					<img src="images/email.png" alt="Email"/>
+				</a>
+				<a href="https://www.rock.com" target="_blank">
+					<img src="images/web-icon.png" alt="Website"/>
+				</a>
+			</div>
+		</footer>
+	</body>
 </html>

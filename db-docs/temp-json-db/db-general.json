@@ -1,0 +1,111 @@
+{
+	"bands": [
+		{
+			"id": 1,
+			"name": "Tesseract",
+			"email": "tesseract@gmail.com",
+			"phone": "99669-9966",
+			"description": "TesseracT has arrived at the highly coveted destination of true creative freedom through bold artistic risk-taking, which has resulted in a loyal audience who are not only comfortable with being challenged by each successive release, but demand to be. A new TesseracT recording is a gift to unwrap, a puzzle to solve, an adventure that beckons.",
+			"web_site": "http://tesseractband.co.uk/",
+			"picture": "http://tesseractband.co.uk/wp-content/uploads/2015/07/tesseract-promo.jpg"
+		},
+		{
+			"id": 2,
+			"name": "ONE OK ROCK",
+			"email": "oneokrock@gmail.com",
+			"phone": "84848-9989",
+			"description": "ONE OK ROCK is a Japanese rock band formed in 2005 and is represented by Amuse, Inc. It performs approximately 100 live concerts every year.",
+			"web_site": "http://www.oneokrock.com/",
+			"picture": "http://www.oneokrock.com/wp-content/uploads/2016/05/7c3a5f0fa95101d2d2923e447e1b9abf.jpg"
+		},
+		{
+			"id": 3,
+			"name": "Alcest",
+			"email": "alcest@gmail.com",
+			"phone": "77445-9966",
+			"description": "Alcest was founded in the year 2000 by songwriter and multi-instrumentalist Neige (aka. Stéphane Paut) and later joined by drummer Winterhalter (Jean Deflandre) in 2009. Labeled as post metal/shoegaze or “blackgaze”, Alcest were the pioneers within this genre, crafting a unique sound based on musical opposites from their very first EP “Le Secret” (2005), and thru their full length releases “Souvenirs D'Un Autre Monde” (2007), “Écailles De Lune” (2010) and “Les Voyages De L'Ame” (2012). In 2014 their fourth album “Shelter” was released, marking the band's departure from the more metal sound, in favor of dream-pop aesthetics, surprising and somewhat challenging their fan base. In retrospective, the album opened new doors for Alcest, bringing them an audience from different horizons and a positive sense of unpredictability as musicians.",
+			"web_site": "https://www.alcest-music.com/",
+			"picture": "https://scontent.fplu9-1.fna.fbcdn.net/v/t31.0-8/17620180_1574060339293227_2961558008062834711_o.jpg?oh=f383e29f8615d2c4c82bccc61d52e1af&oe=598B8B20"
+		},
+		{
+			"id": 4,
+			"name": "Opeth",
+			"email": "opeth@gmail.com",
+			"phone": "66884-9966",
+			"description": "There are few bands that can or will match Sweden’s Opeth. Since forming in the tiny Stockholm suburb of Bandhagen in 1990, the Swedes have eclipsed convention, defiantly crushed the odds, and, most importantly, crafted 12 stunningly beautiful, intrinsically intense albums to become one of the best bands on the planet; whether that be live or on record. Ask any Opeth fan. Enquire with any band that’s shared the proverbial pine with the Swedes. Or, get a label representative to talk Opeth. They’ll all tell you the same thing: Opeth are peerless. And they’re only getting better.",
+			"web_site": "http://www.opeth.com/",
+			"picture": "http://www.opeth.com/images/2016/08/01/band.jpg"
+		},
+		{
+			"id": 5,
+			"name": "Thank You Scientist",
+			"email": "sys@gmail.com",
+			"phone": "77878-9966",
+			"description": "Thank You Scientist is an American progressive rock band from Montclair, New Jersey, United States.[1] Their debut studio album Maps of Non-Existent Places[2] was named the Revolver Magazine "Album of the Week" in October 2014.[3] Their second album Stranger Heads Prevail was released in July 2016.",
+			"web_site": "http://www.thankyouscientist.net/",
+			"picture": "http://www.dangerdog.com/2012-music-reviews/covers/tys-12b2.jpg"
+		}
+	],
+	"events": [
+		{
+			"id": 1,
+			"name": "Progressive Festival",
+			"description": "ProgDay is an annual outdoor festival of progressive music featuring artists from all over the world. Some bands have come from as close as North Carolina, and others from as far away as Sweden, Italy, Venezuela and Indonesia. ProgDay has been held every year since it's birth in 1995, making it the longest running progressive rock event in the world.",
+			"start_date": "September 2, 2017",
+			"end_date": "September 3, 2017",
+			"address": "Rua Frutal, 113, Santa Efigênia, Belo Horizonte, Minas Gerais, 35640000",
+			"age_rating": "18",
+			"bands": [1, 3],
+			"external_link": "https://www.progday.net/",
+			"picture": "https://www.progday.net/Images/Index-MrMushroom.jpg"
+		},
+		{
+			"id": 2,
+			"name": "Festival Pampulha Rock",
+			"description": "Shows de rock com bandas e artistas independentes da região da Pampulha e outras regionais. Produzido pelo o grupo O Coletivo - Bandas Independentes.",
+			"start_date": "May 4, 2017",
+			"end_date": "May 8, 2017",
+			"address": "Centro Cultural Pampulha - Rua Expedicionário Paulo de Souza, 185, Urca, Belo Horizonte, Minas Gerais",
+			"age_rating": "18",
+			"bands": [1, 2, 3],
+			"external_link": "http://www.bhfazcultura.pbh.gov.br/",
+			"picture": "https://pbs.twimg.com/media/Cvdp3scW8AA3tn1.jpg"
+		},
+		{
+			"id": 3,
+			"name": "Pop Rock",
+			"description": "O Pop Rock Brasil é o festival de música criado e produzido pela rádio 98 FM de Belo Horizonte.",
+			"start_date": "August 18, 2017",
+			"end_date": "August 20, 2017",
+			"address": "Avenida Antônio Abrahão Caran, 1001, São José, Belo Horizonte, Minas Gerais, 31275000",
+			"age_rating": "18",
+			"bands": [4, 5],
+			"external_link": "https://pt.wikipedia.org/wiki/Pop_Rock_Brasil",
+			"picture": "http://domtotal.com/img/noticias/2015-11/959644_237821.jpg"
+		},
+		{
+			"id": 4,
+			"name": "Sexta Jack",
+			"description": "Chegou o fim de semana e você quer ouvir o melhor do rock n' roll de todos os tempos? Sim! E mais: onde tenha cerveja gelada e várias opções em drinks exclusivos? Que tal também um belíssimo cardápio de sanduíches, petiscos e até culinária oriental? Ah, e também uma sinuca pra descontrair com os amigos! Esse lugar existe! E está há 14 anos do alto do tobogã da Contorno, convocando todos os admiradores do verdadeiro rock n' roll para noites inesquecíveis! Venha para o Jack Rock Bar! No palco, Aeroguns e Monkey Wrench com os clássicos imortais do estilo que nunca sai de moda!",
+			"start_date": "May 5, 2017",
+			"end_date": "May 6, 2017",
+			"address": "Avenida do Contorno, 5623, Funcionários, Belo Horizonte, Minas Gerais",
+			"age_rating": "18",
+			"bands": [1, 5],
+			"external_link": "http://www.circuitodorock.com.br/nossas-casas/jack-rock-bar/",
+			"picture": "http://bhaz.com.br/wp-content/uploads/2017/03/jack-bar1-esse-850x491.jpg"
+		},
+		{
+			"id": 5,
+			"name": "Let's Rock Saturday",
+			"description": "As suas noites nunca mais serão as mesmas, venha se divertir bastante e fazer parte da família Rota 85!",
+			"start_date": "May 20, 2017",
+			"end_date": "May 21, 2017",
+			"address": "Avenida Guarapari, 85, Santa Amélia, Belo Horizonte, Minas Gerais",
+			"age_rating": "18",
+			"bands": [2, 5],
+			"external_link": "http://rota85.com.br/",
+			"picture": "https://i.ytimg.com/vi/n7LIbIgQhSM/maxresdefault.jpg"
+		},
+	]
+}
