@@ -2,18 +2,28 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8"/>
-        <title>Bandas</title>
+        <title>Bandas - RockOut</title>
         <link rel="stylesheet" href="css/style.css" type="text/css">
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+		<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+		<script src="js/datepicker.js"></script>
     </head>
     <body class="grid-container">
         <header>
+            <h1>Bandas</h1>
             <div>
-                <h1>Bandas</h1>
-            </div>
-            <div>
-                caixa de som para ouvir a musica da banda.spotify
+                speaker to play band samples
             </div>
         </header>
+        <nav>
+            <ul>
+                <li><button class="button lit-button">Bandas</button></li>
+                <li><button class="button lit-button">Locais</button></li>
+                <li><button class="button lit-button">Eventos</button></li>
+                <li><input hidden="" id="datepicker"></li>
+            </ul>
+		</nav>
         <section>
             <div>
                 <h2>Nome da Banda</h2>
@@ -28,9 +38,6 @@
             </div>
         </article>
         <aside>
-            <div>
-                Campo do Calendario.
-            </div>
             <div>
                 Comentario do usuario.
             </div>
@@ -61,11 +68,11 @@
                     <img src="images/email.png" alt="Email"/>
                 </a>
             </div>
-            <!--<div class="website">
+            <div class="website">
                 <a href="https://www.rock.com">
                     <img src="images/web-icon.png" alt="Website"/>
                 </a>
-            </div>-->
+            </div>
         </footer>
     </body>
 </html>
