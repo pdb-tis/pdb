@@ -41,7 +41,7 @@
 			"name": "Thank You Scientist",
 			"email": "sys@gmail.com",
 			"phone": "77878-9966",
-			"description": "Thank You Scientist is an American progressive rock band from Montclair, New Jersey, United States.[1] Their debut studio album Maps of Non-Existent Places[2] was named the Revolver Magazine "Album of the Week" in October 2014.[3] Their second album Stranger Heads Prevail was released in July 2016.",
+			"description": "Thank You Scientist is an American progressive rock band from Montclair, New Jersey, United States.[1] Their debut studio album Maps of Non-Existent Places[2] was named the Revolver Magazine 'Album of the Week' in October 2014.[3] Their second album Stranger Heads Prevail was released in July 2016.",
 			"web_site": "http://www.thankyouscientist.net/",
 			"picture": "http://www.dangerdog.com/2012-music-reviews/covers/tys-12b2.jpg"
 		}
@@ -106,6 +106,6 @@
 			"bands": [2, 5],
 			"external_link": "http://rota85.com.br/",
 			"picture": "https://i.ytimg.com/vi/n7LIbIgQhSM/maxresdefault.jpg"
-		},
+		}
 	]
 }

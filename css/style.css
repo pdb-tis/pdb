@@ -24,13 +24,14 @@ label, button, a {
 	font-size: 14px;
 }
 
-h1 {
+header h1 {
 	font-family: 'hard_rockregular';
 	font-size: 100px;
 	text-align: center;
 	color: white;
 	font-weight: 100;
 	vertical-align: middle;
+	cursor: pointer;
 }
 
 header {
@@ -67,20 +68,85 @@ nav .button-container button:hover {
 	color: #FBB316;
 }
 
-section {
+section .main-content {
 	grid-area: section;
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+}
+
+section .search-results h1,
+section .search-results h2,
+section .search-results h3,
+section .search-results p,
+section .band-results p {
+	font-family: "PT+Sans", Helvetica, Arial, sans-serif;
+	text-align: justify;
+}
+
+section .search-results h1,
+section .search-results h2,
+section .search-results h3 {
+	color: #FF8C00;
+}
+
+section .band-results h3 {
+	margin: 10px;
+}
+
+section .band-result h3 {
+	color: #b22222;
+}
+
+section .results-container {
+	background-color: #111;
+	width: 100%;
+	display: inline-block;
+}
+
+section .search-results {
+	margin: 20px;
+	color: white;
+}
+
+section .search-results a {
+	color: #DD6A00;
+}
+
+section .search-results img {
+	max-width: 600px;
+}
+
+section .search-results .band-results {
+	margin: 10px;
+	background-color: #333;
+	border-radius: 5px;
+	display: inline-block;
+}
+
+section .search-results .band-results .band-result {
+	display: inline-block;
+	margin: 10px;
+	padding: 15px;
+	background-color: #666;
+	width: 450px;
+	border-radius: 5px;
+	vertical-align: top;
+}
+
+section .search-results .band-results .band-result img {
+	max-width: 280px;
 }
 
 .carousel-content {
 	max-width: 50%;
-	margin-top: 16px;
-	margin-bottom: 16px;
+	margin-top: 15px;
+	margin-bottom: 15px;
 }
 
 .carousel-content img {
 	display: none;
 }
-
 
 .a-left {
 	transform: rotate(-45deg);
@@ -141,7 +207,7 @@ aside .search-form input {
 	margin: 5px;
 }
 
-aside hr { 
+hr { 
 	height: 30px; 
 	border-style: solid; 
 	border-color: #DDD; 
@@ -151,7 +217,7 @@ aside hr {
 	margin-top: 45px;
 } 
 
-aside hr:before { 
+hr:before { 
 	display: block; 
 	content: ""; 
 	height: 30px; 
