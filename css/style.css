@@ -6,7 +6,7 @@ html, body {
 }
 
 body { 
-	background-image: url('./images/background.png');
+	background-image: url('images/background.png');
 	background-repeat: no-repeat;
 	background-size: cover;
 	display: grid;
@@ -39,7 +39,7 @@ header {
 
 nav {
 	grid-area: nav;
-	background-image: url("./images/nav-texture.jpg");
+	background-image: url("images/nav-texture.jpg");
 	height: 100%;
 	line-height: 95px;
 }
