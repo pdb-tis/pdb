@@ -26,7 +26,7 @@ const doSearch = () => {
 	let bandName = $(".bane-name").val().trim().toLowerCase(),
 		addressFragments = formatAddressFromInput($(".address").val()),
 		dateFrom = $(".date-from").val(),
-		dateTo $(".date-to").val(),
+		dateTo = $(".date-to").val(),
 		eventsFound = events.filter(event =>
 			((event.start_date < dateTo && event.start_date > dateFrom) ||
 			(event.end_date < dateTo && event.end_date > dateFrom) ||
