@@ -1,7 +1,7 @@
 const bands = [];
 const events = [];
 
-(() => $.getJSON("../db-docs/temp-json-db/db-general.json", function(data) {
+(() => $.getJSON("db-docs/temp-json-db/db-general.json", function(data) {
 		$.each(data, function(key, val) {
 			(key == 'bands' && val.forEach(band => bands.push(band)));
 			(key == 'events' && val.forEach(band => events.push(band)));
