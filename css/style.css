@@ -8,7 +8,7 @@ html {
 }
 
 body {
-    background: black url('../images/background.png') no-repeat fixed right top;
+    background: black url('../images/background.jpg') no-repeat fixed right top;
     color: #999999;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 14px;
@@ -109,16 +109,27 @@ nav li {
     color: white;
 }
 
+.lit-date {
+    padding: 4px 12px;
+    color: white;
+    background-color: #333333;
+    border: 1px solid #999999;
+    border-radius: 4px;
+    transition-duration: 0.3s;
+}
+
+.lit-date:hover {
+    background-color: #454545;
+    color: white;
+}
+
+/*
 .ui-datepicker-trigger {
     margin-left: 5px;
     vertical-align: bottom;
-}
+}*/
 
-/* banner slideshow *
-element.style {
-    max-width: 900px;
-}
-*/
+/* carousel slideshow */
 .ss-section, .ss-code {
     margin-top: 16px;
     margin-bottom: 16px;

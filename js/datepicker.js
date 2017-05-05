@@ -1,14 +1,14 @@
-$(function () {
+/*$(function () {
     $( "#datepicker" ).datepicker({
         showOn: "button",
         buttonImage: "../images/calendar-icon.png",
         buttonImageOnly: true,
         buttonText: "Selecione uma data"
     });
-  });/*
+  });*/
   $( function() {
-    var dateFormat = "mm/dd/yy",
-      from = $( "#from" )
+    var dateFormat = "dd/mm/yyyy",
+      from = $( "#datepicker-from" )
         .datepicker({
           defaultDate: "+1w",
           changeMonth: true,
@@ -17,7 +17,7 @@ $(function () {
         .on( "change", function() {
           to.datepicker( "option", "minDate", getDate( this ) );
         }),
-      to = $( "#to" ).datepicker({
+      to = $( "#datepicker-to" ).datepicker({
         defaultDate: "+1w",
         changeMonth: true,
         numberOfMonths: 3
