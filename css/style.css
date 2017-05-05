@@ -96,11 +96,6 @@ nav li {
 }
 
 .lit-button {
-    /*
-    display: inline-block;
-    float: center;
-    text-align: center;
-    */
     padding: 10px 16px;
     color: white;
     background-color: #333333;
@@ -120,51 +115,22 @@ nav li {
 }
 
 /* banner slideshow *
-arrow {
-    position: absolute;
-    border: solid #aaaaaa;
-    border-width: 0 20px 20px 0;
-    display: block;
-    padding: 20px;
-    margin: auto;
-    width: 4.5%;
-    top: 65%;
-}
-
-.left {
-    transform: rotate(135deg);
-    -webkit-transform: rotate(135deg);
-    transition-duration: 0.3s;
-}
-
-.right {
-    transform: rotate(-45deg);
-    -webkit-transform: rotate(-45deg);
-    transition-duration: 0.3s;
-}
-
-.left:hover {
-    border-right-color: #ffffff;
-    border-bottom-color: #ffffff;
-}
-
-.right:hover {
-    border-right-color: #ffffff;
-    border-bottom-color: #ffffff;
+element.style {
+    max-width: 900px;
 }
 */
-element.style {
-    max-width: 1000px;
-}
-
 .ss-section, .ss-code {
     margin-top: 16px;
     margin-bottom: 16px;
 }
 
 .ss-content {
-    max-width: 980px;
+    max-width: 900px;
     margin: auto;
+}
+
+.demoSlides {
+    display: none;
 }
 
 /* aside */
@@ -190,7 +156,7 @@ element.style {
     color: white;
     font-weight: 100;
     font-style: normal;
-    font-size: 16px;
+    font-size: 14px;
     text-align: center;
 }
 
