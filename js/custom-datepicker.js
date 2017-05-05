@@ -1,4 +1,4 @@
-$(function() {
+$(document).ready(function() {
 	var dateFormat = "dd/mm/yyyy",
 		from = $(".search-form .date-from")
 			.datepicker({
@@ -23,4 +23,4 @@ $(function() {
 	function getDate(element) {
 		return $.datepicker.parseDate(dateFormat, element.value);
 	}
-})();
+});

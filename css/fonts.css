@@ -1,15 +1,15 @@
 @font-face {
 	font-family: 'hard_rockregular';
-	src: url('/font/hard_rock-webfont.woff2') format('woff2'),
-		 url('/font/hard_rock-webfont.woff') format('woff');
+	src: url('../font/hard_rock-webfont.woff2') format('woff2'),
+		 url('../font/hard_rock-webfont.woff') format('woff');
 	font-weight: normal;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: 'chinese_rocksregular';
-	src: url('/font/chineser-webfont.woff2') format('woff2'),
-		 url('/font/chineser-webfont.woff') format('woff');
+	src: url('../font/chineser-webfont.woff2') format('woff2'),
+		 url('../font/chineser-webfont.woff') format('woff');
 	font-weight: normal;
 	font-style: normal;
 }
